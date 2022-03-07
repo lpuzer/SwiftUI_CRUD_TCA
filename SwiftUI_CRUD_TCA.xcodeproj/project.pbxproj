@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB66DC3C27D6177700314D43 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC3B27D6177700314D43 /* AppState.swift */; };
+		CB66DC3E27D617A400314D43 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC3D27D617A400314D43 /* AppAction.swift */; };
+		CB66DC4027D617CA00314D43 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC3F27D617CA00314D43 /* AppReducer.swift */; };
+		CB66DC4227D6181C00314D43 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC4127D6181C00314D43 /* AppEnvironment.swift */; };
 		CB6FF8B327D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6FF8B227D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift */; };
-		CB6FF8B527D567AB003B27D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6FF8B427D567AB003B27D7 /* ContentView.swift */; };
+		CB6FF8B527D567AB003B27D7 /* ContactListtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6FF8B427D567AB003B27D7 /* ContactListtView.swift */; };
 		CB6FF8B727D567AC003B27D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6FF8B627D567AC003B27D7 /* Assets.xcassets */; };
 		CB6FF8BA27D567AC003B27D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6FF8B927D567AC003B27D7 /* Preview Assets.xcassets */; };
 		CB6FF8C227D567D7003B27D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CB6FF8C127D567D7003B27D7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB66DC3B27D6177700314D43 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CB66DC3D27D617A400314D43 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		CB66DC3F27D617CA00314D43 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		CB66DC4127D6181C00314D43 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		CB6FF8AF27D567AB003B27D7 /* SwiftUI_CRUD_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_CRUD_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6FF8B227D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CRUD_TCAApp.swift; sourceTree = "<group>"; };
-		CB6FF8B427D567AB003B27D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB6FF8B427D567AB003B27D7 /* ContactListtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListtView.swift; sourceTree = "<group>"; };
 		CB6FF8B627D567AC003B27D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB6FF8B927D567AC003B27D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB6FF8D127D58ABE003B27D7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -60,7 +68,7 @@
 				CB6FF8C427D5688E003B27D7 /* Action */,
 				CB6FF8C327D56882003B27D7 /* State */,
 				CB6FF8B227D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift */,
-				CB6FF8B427D567AB003B27D7 /* ContentView.swift */,
+				CB6FF8B427D567AB003B27D7 /* ContactListtView.swift */,
 				CB6FF8B627D567AC003B27D7 /* Assets.xcassets */,
 				CB6FF8B827D567AC003B27D7 /* Preview Content */,
 			);
@@ -78,6 +86,7 @@
 		CB6FF8C327D56882003B27D7 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				CB66DC3B27D6177700314D43 /* AppState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -85,6 +94,7 @@
 		CB6FF8C427D5688E003B27D7 /* Action */ = {
 			isa = PBXGroup;
 			children = (
+				CB66DC3D27D617A400314D43 /* AppAction.swift */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -92,6 +102,7 @@
 		CB6FF8C527D5689A003B27D7 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				CB66DC4127D6181C00314D43 /* AppEnvironment.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -99,6 +110,7 @@
 		CB6FF8C627D568A4003B27D7 /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
+				CB66DC3F27D617CA00314D43 /* AppReducer.swift */,
 			);
 			path = Reducer;
 			sourceTree = "<group>";
@@ -179,8 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6FF8B527D567AB003B27D7 /* ContentView.swift in Sources */,
+				CB66DC3C27D6177700314D43 /* AppState.swift in Sources */,
+				CB66DC3E27D617A400314D43 /* AppAction.swift in Sources */,
+				CB6FF8B527D567AB003B27D7 /* ContactListtView.swift in Sources */,
 				CB6FF8B327D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift in Sources */,
+				CB66DC4027D617CA00314D43 /* AppReducer.swift in Sources */,
+				CB66DC4227D6181C00314D43 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

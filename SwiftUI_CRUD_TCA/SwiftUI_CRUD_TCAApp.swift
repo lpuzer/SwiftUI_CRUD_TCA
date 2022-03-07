@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct SwiftUI_CRUD_TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(
+            ContactListtView(
                 store: Store(
                     initialState: AppState(cards: [
                         Card(
