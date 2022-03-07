@@ -10,9 +10,20 @@ import ComposableArchitecture
 
 
 enum AppAction {
-    case cardCheckboxTapped(index: Int)
-    case nameTextFieldChanged(index: Int, text: String)
-    case phoneTextFieldChange(index: Int, text: String)
-    case cardColorChanged(index: Int, text: String)
-    case fontColorChanged(index: Int, text: String)
+// a general case for all action
+    case card(index:Int, action: CardAction)
+    
+// one case for each action
+//    case cardCheckboxTapped(index: Int)
+//    case nameTextFieldChanged(index: Int, text: String)
+//    case phoneTextFieldChange(index: Int, text: String)
+//    case cardColorChanged(index: Int, text: String)
+//    case fontColorChanged(index: Int, text: String)
+}
+
+//Action controll for any specific row
+enum CardAction {
+    case checkboxTapped
+    case nameTextFieldChanged(String)
+    case phoneTextFieldChanged(String)
 }

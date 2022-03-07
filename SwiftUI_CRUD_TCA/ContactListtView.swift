@@ -20,30 +20,38 @@ struct ContactListtView: View {
         NavigationView {
             WithViewStore(self.store) { viewStore in
                 List{
-                    ForEach(Array(viewStore.cards.enumerated()), id: \.element.id) { index, item in
+                    //A way to take out the index stuffs
+                    ForEachStore(
+                        self.store.scope(
+                            state: { $0.cards },
+                            action: { AppAction.card(index: $0, action: $1) }
+                            )
+                        ) { cardStore in
+                            WithViewStore(cardStore) { cardViewStore in
+ 
                         VStack (alignment: .leading, spacing: 5){
                             
                             Button(action: {
-                                viewStore.send(.cardCheckboxTapped(index: index))
+                                cardViewStore.send(.checkboxTapped)
                             }) {
-                                Image(systemName: item.isCompleted ? "checkmark.square" : "square")
+                                Image(systemName: cardViewStore.isCompleted ? "checkmark.square" : "square")
                             }
                             .buttonStyle(PlainButtonStyle())
                             
                             TextField(
                                 "Name",
-                                text: viewStore.binding(
-                                    get: { $0.cards[index].name },
-                                    send: { .nameTextFieldChanged(index: index, text: $0)
+                                text: cardViewStore.binding(
+                                    get: { $0.name },
+                                    send: { .nameTextFieldChanged($0)
                                     }
                                 )
                             )
                             
                             TextField(
                                 "Phone",
-                                text: viewStore.binding(
-                                    get: { $0.cards[index].phone },
-                                    send: { .phoneTextFieldChange(index: index, text: $0)
+                                text: cardViewStore.binding(
+                                    get: { $0.phone },
+                                    send: { .phoneTextFieldChanged($0)
                                     }
                                 )
                             )
@@ -51,10 +59,11 @@ struct ContactListtView: View {
                         .font(.title)
                         .frame(width: 300, height: 100)
                         .padding()
-                        .background(Color(item.cardColor))
-                        .foregroundColor(Color(item.fontColor))
+                        .background(Color(cardViewStore.cardColor))
+                        .foregroundColor(cardViewStore.isCompleted ? Color(cardViewStore.fontColor).opacity(0.2) : Color(cardViewStore.fontColor))
                         .cornerRadius(20)
                     }
+                        }
                     Spacer()
                 }.listRowBackground(Color("mainBackground"))
                     .listRowSeparator(.hidden)

@@ -12,3 +12,9 @@ import ComposableArchitecture
 struct AppEnvironment {
     
 }
+
+
+//A environment to CardAction
+struct CardEnvironment {
+    
+}
