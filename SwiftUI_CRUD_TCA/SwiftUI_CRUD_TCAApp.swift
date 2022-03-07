@@ -14,14 +14,32 @@ struct SwiftUI_CRUD_TCAApp: App {
         WindowGroup {
             ContentView(
                 store: Store(
-                    initialState: AppState(cards: [Card(
+                    initialState: AppState(cards: [
+                        Card(
                         id: UUID(),
-                        name: "Luciano",
-                        phone: "995052166",
-                        cardColor: "cardColor",
-                        fontColor: "fontColor",
+                        name: "Yoda",
+                        phone: "99999999",
+                        cardColor: "yellow",
+                        fontColor: "pink",
                         isCompleted: true
-                    )]),
+                    ),
+                     Card(
+                         id: UUID(),
+                         name: "Ahsoka",
+                         phone: "888888888",
+                         cardColor: "pink",
+                         fontColor: "white",
+                         isCompleted: false
+                     ),
+                     Card(
+                         id: UUID(),
+                         name: "Anakin",
+                         phone: "777777777",
+                         cardColor: "green",
+                         fontColor: "blue",
+                         isCompleted: false
+                     )
+                    ]),
                     reducer: appReducer,
                     environment: AppEnvironment()
                 )
