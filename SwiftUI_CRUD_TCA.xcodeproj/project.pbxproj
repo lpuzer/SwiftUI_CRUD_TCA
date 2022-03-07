@@ -11,18 +11,45 @@
 		CB66DC3E27D617A400314D43 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC3D27D617A400314D43 /* AppAction.swift */; };
 		CB66DC4027D617CA00314D43 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC3F27D617CA00314D43 /* AppReducer.swift */; };
 		CB66DC4227D6181C00314D43 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC4127D6181C00314D43 /* AppEnvironment.swift */; };
+		CB66DC4427D62FF400314D43 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC4327D62FF400314D43 /* CardView.swift */; };
+		CB66DC4C27D6494E00314D43 /* SwiftUI_CRUD_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC4B27D6494E00314D43 /* SwiftUI_CRUD_TCATests.swift */; };
+		CB66DC5927D6495800314D43 /* SwiftUI_CRUD_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC5827D6495800314D43 /* SwiftUI_CRUD_TCAUITests.swift */; };
+		CB66DC5B27D6495800314D43 /* SwiftUI_CRUD_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66DC5A27D6495800314D43 /* SwiftUI_CRUD_TCAUITestsLaunchTests.swift */; };
+		CB66DC6327D6498000314D43 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CB66DC6227D6498000314D43 /* ComposableArchitecture */; };
 		CB6FF8B327D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6FF8B227D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift */; };
 		CB6FF8B527D567AB003B27D7 /* ContactListtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6FF8B427D567AB003B27D7 /* ContactListtView.swift */; };
 		CB6FF8B727D567AC003B27D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6FF8B627D567AC003B27D7 /* Assets.xcassets */; };
 		CB6FF8BA27D567AC003B27D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6FF8B927D567AC003B27D7 /* Preview Assets.xcassets */; };
-		CB6FF8C227D567D7003B27D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CB6FF8C127D567D7003B27D7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB66DC4D27D6494E00314D43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6FF8A727D567AB003B27D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6FF8AE27D567AB003B27D7;
+			remoteInfo = SwiftUI_CRUD_TCA;
+		};
+		CB66DC5C27D6495800314D43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6FF8A727D567AB003B27D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6FF8AE27D567AB003B27D7;
+			remoteInfo = SwiftUI_CRUD_TCA;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB66DC3B27D6177700314D43 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CB66DC3D27D617A400314D43 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		CB66DC3F27D617CA00314D43 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		CB66DC4127D6181C00314D43 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		CB66DC4327D62FF400314D43 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CB66DC4927D6494E00314D43 /* SwiftUI_CRUD_TCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_CRUD_TCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB66DC4B27D6494E00314D43 /* SwiftUI_CRUD_TCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CRUD_TCATests.swift; sourceTree = "<group>"; };
+		CB66DC5627D6495800314D43 /* SwiftUI_CRUD_TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_CRUD_TCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB66DC5827D6495800314D43 /* SwiftUI_CRUD_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CRUD_TCAUITests.swift; sourceTree = "<group>"; };
+		CB66DC5A27D6495800314D43 /* SwiftUI_CRUD_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CRUD_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB6FF8AF27D567AB003B27D7 /* SwiftUI_CRUD_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_CRUD_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6FF8B227D567AB003B27D7 /* SwiftUI_CRUD_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CRUD_TCAApp.swift; sourceTree = "<group>"; };
 		CB6FF8B427D567AB003B27D7 /* ContactListtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListtView.swift; sourceTree = "<group>"; };
@@ -32,22 +59,55 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB66DC4627D6494E00314D43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB66DC5327D6495800314D43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB6FF8AC27D567AB003B27D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6FF8C227D567D7003B27D7 /* ComposableArchitecture in Frameworks */,
+				CB66DC6327D6498000314D43 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB66DC4A27D6494E00314D43 /* SwiftUI_CRUD_TCATests */ = {
+			isa = PBXGroup;
+			children = (
+				CB66DC4B27D6494E00314D43 /* SwiftUI_CRUD_TCATests.swift */,
+			);
+			path = SwiftUI_CRUD_TCATests;
+			sourceTree = "<group>";
+		};
+		CB66DC5727D6495800314D43 /* SwiftUI_CRUD_TCAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB66DC5827D6495800314D43 /* SwiftUI_CRUD_TCAUITests.swift */,
+				CB66DC5A27D6495800314D43 /* SwiftUI_CRUD_TCAUITestsLaunchTests.swift */,
+			);
+			path = SwiftUI_CRUD_TCAUITests;
+			sourceTree = "<group>";
+		};
 		CB6FF8A627D567AB003B27D7 = {
 			isa = PBXGroup;
 			children = (
 				CB6FF8D127D58ABE003B27D7 /* README.md */,
 				CB6FF8B127D567AB003B27D7 /* SwiftUI_CRUD_TCA */,
+				CB66DC4A27D6494E00314D43 /* SwiftUI_CRUD_TCATests */,
+				CB66DC5727D6495800314D43 /* SwiftUI_CRUD_TCAUITests */,
 				CB6FF8B027D567AB003B27D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				CB6FF8AF27D567AB003B27D7 /* SwiftUI_CRUD_TCA.app */,
+				CB66DC4927D6494E00314D43 /* SwiftUI_CRUD_TCATests.xctest */,
+				CB66DC5627D6495800314D43 /* SwiftUI_CRUD_TCAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CB66DC3B27D6177700314D43 /* AppState.swift */,
+				CB66DC4327D62FF400314D43 /* CardView.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -118,6 +181,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB66DC4827D6494E00314D43 /* SwiftUI_CRUD_TCATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB66DC4F27D6494E00314D43 /* Build configuration list for PBXNativeTarget "SwiftUI_CRUD_TCATests" */;
+			buildPhases = (
+				CB66DC4527D6494E00314D43 /* Sources */,
+				CB66DC4627D6494E00314D43 /* Frameworks */,
+				CB66DC4727D6494E00314D43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB66DC4E27D6494E00314D43 /* PBXTargetDependency */,
+			);
+			name = SwiftUI_CRUD_TCATests;
+			productName = SwiftUI_CRUD_TCATests;
+			productReference = CB66DC4927D6494E00314D43 /* SwiftUI_CRUD_TCATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB66DC5527D6495800314D43 /* SwiftUI_CRUD_TCAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB66DC5E27D6495800314D43 /* Build configuration list for PBXNativeTarget "SwiftUI_CRUD_TCAUITests" */;
+			buildPhases = (
+				CB66DC5227D6495800314D43 /* Sources */,
+				CB66DC5327D6495800314D43 /* Frameworks */,
+				CB66DC5427D6495800314D43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB66DC5D27D6495800314D43 /* PBXTargetDependency */,
+			);
+			name = SwiftUI_CRUD_TCAUITests;
+			productName = SwiftUI_CRUD_TCAUITests;
+			productReference = CB66DC5627D6495800314D43 /* SwiftUI_CRUD_TCAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		CB6FF8AE27D567AB003B27D7 /* SwiftUI_CRUD_TCA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB6FF8BD27D567AC003B27D7 /* Build configuration list for PBXNativeTarget "SwiftUI_CRUD_TCA" */;
@@ -132,7 +231,7 @@
 			);
 			name = SwiftUI_CRUD_TCA;
 			packageProductDependencies = (
-				CB6FF8C127D567D7003B27D7 /* ComposableArchitecture */,
+				CB66DC6227D6498000314D43 /* ComposableArchitecture */,
 			);
 			productName = SwiftUI_CRUD_TCA;
 			productReference = CB6FF8AF27D567AB003B27D7 /* SwiftUI_CRUD_TCA.app */;
@@ -148,6 +247,14 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					CB66DC4827D6494E00314D43 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = CB6FF8AE27D567AB003B27D7;
+					};
+					CB66DC5527D6495800314D43 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = CB6FF8AE27D567AB003B27D7;
+					};
 					CB6FF8AE27D567AB003B27D7 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -163,18 +270,34 @@
 			);
 			mainGroup = CB6FF8A627D567AB003B27D7;
 			packageReferences = (
-				CB6FF8C027D567D7003B27D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				CB66DC6127D6498000314D43 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = CB6FF8B027D567AB003B27D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CB6FF8AE27D567AB003B27D7 /* SwiftUI_CRUD_TCA */,
+				CB66DC4827D6494E00314D43 /* SwiftUI_CRUD_TCATests */,
+				CB66DC5527D6495800314D43 /* SwiftUI_CRUD_TCAUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB66DC4727D6494E00314D43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB66DC5427D6495800314D43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB6FF8AD27D567AB003B27D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,10 +310,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB66DC4527D6494E00314D43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB66DC4C27D6494E00314D43 /* SwiftUI_CRUD_TCATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB66DC5227D6495800314D43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB66DC5927D6495800314D43 /* SwiftUI_CRUD_TCAUITests.swift in Sources */,
+				CB66DC5B27D6495800314D43 /* SwiftUI_CRUD_TCAUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB6FF8AB27D567AB003B27D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB66DC4427D62FF400314D43 /* CardView.swift in Sources */,
 				CB66DC3C27D6177700314D43 /* AppState.swift in Sources */,
 				CB66DC3E27D617A400314D43 /* AppAction.swift in Sources */,
 				CB6FF8B527D567AB003B27D7 /* ContactListtView.swift in Sources */,
@@ -202,7 +343,90 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CB66DC4E27D6494E00314D43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6FF8AE27D567AB003B27D7 /* SwiftUI_CRUD_TCA */;
+			targetProxy = CB66DC4D27D6494E00314D43 /* PBXContainerItemProxy */;
+		};
+		CB66DC5D27D6495800314D43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6FF8AE27D567AB003B27D7 /* SwiftUI_CRUD_TCA */;
+			targetProxy = CB66DC5C27D6495800314D43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CB66DC5027D6494E00314D43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C55LM56SH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halbus.SwiftUI-CRUD-TCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_CRUD_TCA.app/SwiftUI_CRUD_TCA";
+			};
+			name = Debug;
+		};
+		CB66DC5127D6494E00314D43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C55LM56SH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halbus.SwiftUI-CRUD-TCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_CRUD_TCA.app/SwiftUI_CRUD_TCA";
+			};
+			name = Release;
+		};
+		CB66DC5F27D6495800314D43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C55LM56SH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halbus.SwiftUI-CRUD-TCAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUI_CRUD_TCA;
+			};
+			name = Debug;
+		};
+		CB66DC6027D6495800314D43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C55LM56SH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halbus.SwiftUI-CRUD-TCAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUI_CRUD_TCA;
+			};
+			name = Release;
+		};
 		CB6FF8BB27D567AC003B27D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,6 +604,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB66DC4F27D6494E00314D43 /* Build configuration list for PBXNativeTarget "SwiftUI_CRUD_TCATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB66DC5027D6494E00314D43 /* Debug */,
+				CB66DC5127D6494E00314D43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB66DC5E27D6495800314D43 /* Build configuration list for PBXNativeTarget "SwiftUI_CRUD_TCAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB66DC5F27D6495800314D43 /* Debug */,
+				CB66DC6027D6495800314D43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CB6FF8AA27D567AB003B27D7 /* Build configuration list for PBXProject "SwiftUI_CRUD_TCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -401,7 +643,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CB6FF8C027D567D7003B27D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		CB66DC6127D6498000314D43 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
@@ -412,9 +654,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CB6FF8C127D567D7003B27D7 /* ComposableArchitecture */ = {
+		CB66DC6227D6498000314D43 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB6FF8C027D567D7003B27D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = CB66DC6127D6498000314D43 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */

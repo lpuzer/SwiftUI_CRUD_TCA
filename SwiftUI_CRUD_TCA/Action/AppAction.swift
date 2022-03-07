@@ -11,6 +11,7 @@ import ComposableArchitecture
 
 enum AppAction {
 // a general case for all action
+    case AddButtonTapped
     case card(index:Int, action: CardAction)
     
 // one case for each action

@@ -8,12 +8,28 @@
 import SwiftUI
 import ComposableArchitecture
 
-let appReducer: Reducer<AppState, AppAction, AppEnvironment> = CardReducer.forEach(
-    state: \AppState.cards,
-    action: /AppAction.card(index:action:),
-    environment: { _ in CardEnvironment() }
+let appReducer = Reducer<AppState, AppAction, AppEnvironment>.combine(
+    CardReducer.forEach(
+        state: \AppState.cards,
+        action: /AppAction.card(index:action:),
+        environment: { _ in CardEnvironment() }
+    ),
+    Reducer { state, action, environment in
+        switch action {
+            
+        case .AddButtonTapped:
+            state.cards.insert(Card(id: UUID(), cardColor: "blue", fontColor: "white"), at: 0)
+            return .none
+        case .card(index: let index, action: let action):
+            return .none
+        }
+    }
 )
     .debug()
+                                     
+//                                     name: "Obiwan", phone: "999999999", cardColor: "blue", fontColor: "white", isCompleted: false))
+             
+
 //let appReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, environment in
 //
 //    switch action {

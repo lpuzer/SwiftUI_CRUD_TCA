@@ -22,52 +22,18 @@ struct ContactListtView: View {
                 List{
                     //A way to take out the index stuffs
                     ForEachStore(
-                        self.store.scope(
-                            state: { $0.cards },
-                            action: { AppAction.card(index: $0, action: $1) }
-                            )
-                        ) { cardStore in
-                            WithViewStore(cardStore) { cardViewStore in
- 
-                        VStack (alignment: .leading, spacing: 5){
-                            
-                            Button(action: {
-                                cardViewStore.send(.checkboxTapped)
-                            }) {
-                                Image(systemName: cardViewStore.isCompleted ? "checkmark.square" : "square")
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            
-                            TextField(
-                                "Name",
-                                text: cardViewStore.binding(
-                                    get: { $0.name },
-                                    send: { .nameTextFieldChanged($0)
-                                    }
-                                )
-                            )
-                            
-                            TextField(
-                                "Phone",
-                                text: cardViewStore.binding(
-                                    get: { $0.phone },
-                                    send: { .phoneTextFieldChanged($0)
-                                    }
-                                )
-                            )
-                        }
-                        .font(.title)
-                        .frame(width: 300, height: 100)
-                        .padding()
-                        .background(Color(cardViewStore.cardColor))
-                        .foregroundColor(cardViewStore.isCompleted ? Color(cardViewStore.fontColor).opacity(0.2) : Color(cardViewStore.fontColor))
-                        .cornerRadius(20)
-                    }
-                        }
+                        self.store.scope(state: \.cards,
+                            action: AppAction.card(index: action:)
+                            ),
+                        content: CardView.init(store:)
+                        )
                     Spacer()
                 }.listRowBackground(Color("mainBackground"))
                     .listRowSeparator(.hidden)
                 .navigationTitle("Contact List")
+                .navigationBarItems(trailing: Button("Add") {
+                    viewStore.send(.AddButtonTapped)
+                })
             }
         }
         
